@@ -13,5 +13,9 @@ class HomePage : AppCompatActivity() {
         val username = intent.getStringExtra("username")
         val userpass = intent.getStringExtra("userpass")
         binding.txtUserName.text = "Mr.\n ${username.toString()} ${userpass.toString()}"
+
+        binding.btnClose.setOnClickListener {
+            finish()
+        }
     }
 }
